@@ -16,24 +16,47 @@
 
     <!-- Custom fonts for this template -->
     <link
-      href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      href="https://fonts.googleapis.com/css?family=Nunito:300,400,700|Rubik:300,400,500&display=swap"
       rel="stylesheet"
     />
 
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.min.css" rel="stylesheet" />
+    <style>
+      .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+        margin-top: 50px;
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div id="app">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Arihant Creations</a>
+          <a class="navbar-brand" href="#">
+            <span style="font-weight: lighter;">Arihant</span>
+            <span style="font-weight: bolder;">Creations</span></a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -48,7 +71,40 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#product">Product</a>
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_us">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Product</a
+                >
+                <div class="dropdown-menu">
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="files/vending_machine_brochure.pdf"
+                    >Vending machines</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="files/incinerator-brochure.pdf"
+                    >Incinerators</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    href="files/sanitary-napkin-brochure.pdf"
+                    >Sanitary Napkins</a
+                  >
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#faq">FAQ</a>
@@ -64,21 +120,54 @@
       <header class="masthead text-center text-white">
         <div class="masthead-content">
           <div class="container">
-            <h1 class="masthead-heading mb-0">
-              Priya Sakhi<span style="color: #EA2027;">.</span>
-            </h1>
-            <h4 class="mb-0">
+            <div class="masthead-heading mb-0">
+              <!-- Priya Sakhi<span style="color: #EA2027;">.</span> -->
+              <img src="img/logo.svg" alt="" class="logo my-3" />
+            </div>
+            <div class="masthead-subheading mb-0">
               Peace & Comfort to mind without guilty
-            </h4>
-            <!-- <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5"
-              >Learn More</a
-            > -->
+            </div>
+            <div class="bounce">
+              <ion-icon name="ios-arrow-down" size="large"></ion-icon>
+            </div>
           </div>
         </div>
       </header>
 
-      <section>
+      <section id="about_us">
+        <div
+          style="padding: 100px 0px 200px 0px; background: #f5f6fa; cursor: pointer;"
+        >
+          <div class="container">
+            <h1 align="center" style="padding-bottom: 50px;">About us</h1>
+            <p style="text-align: justify;">
+              Arihant creations started in 2010, in the industrial town
+              Silvassa, UT of DNH, to market vending machines and incinerators,
+              of other manufacturers. Later in 2018 with the experienced
+              gathered and adopting new technologies, we ventured to own
+              manufacturing, with the brand name of PRIYASAKHI. After a strong
+              research, we came out successfully, with no compliance machines,
+              received by market well.
+            </p>
+            <p style="text-align: justify;">
+              We offer complete range of products, for domestic as well
+              industrial models, leading innovation and unique design, with
+              advanced technology updated time to time. We design customer
+              specific machines, to suit their needs, by which, our machines
+              without doubt, preferred by best institutions across country.
+              Indian government also recommending these machines in their SWACH
+              BHARAT & BETI BACHAO BETI PADAO mission and grades been given to
+              the schools, for installation and proper use of these machines.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section style="background: #3742fa;" id="product">
         <div class="container">
+          <h1 align="center" class="text-white py-5">
+            Products we manufacture
+          </h1>
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div class="p-5">
@@ -87,571 +176,181 @@
             </div>
             <div class="col-lg-6 order-lg-1">
               <div class="p-5">
-                <h2 class="display-4">Arihant Creations</h2>
-                <p>
-                  Started in 2010, in the small industrial town Silvassa, at UT
-                  of DNH, to market vending machines and incinerators, of other
-                  manufacturers. Later in 2018 with the experienced gathered and
-                  adopting new technologies, we ventured to own manufacturing,
-                  with the brand name of PRIYASAKHI. After a strong research, we
-                  came out successfully, with no compliance machines, received
-                  by market well.
-                </p>
+                <h2 class="display-5 pb-2 text-white">Vending Machine</h2>
+
+                <div
+                  class="product-card mt-3"
+                  v-for="vending_machine in vending_machines"
+                >
+                  <div class="product-card-heading">
+                    {{ vending_machine.name }}
+                  </div>
+                  <hr />
+                  <div class="product-card-detail">
+                    <div class="detail-item">
+                      <div>
+                        <span class="detail-item-value">{{
+                          vending_machine.stacking_capacity
+                        }}</span>
+                        <br />
+                        <span style="color:deeppink"
+                          ><ion-icon name="ios-apps"></ion-icon> Stacking
+                          capacity</span
+                        >
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <div>
+                        <span class="detail-item-value">{{
+                          vending_machine.dimension
+                        }}</span
+                        ><br />
+                        <span style="color:deeppink"
+                          ><ion-icon name="ios-cube"></ion-icon> Dimension</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section style="background: #3742fa;">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="p-5">
-                <img class="img-fluid rounded-circle" src="img/02.png" alt="" />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="p-5">
-                <h2 class="display-4">Problems to be solved</h2>
-                <p>
-                  Gone are the day's, girls those who attend schools, during
-                  those days, due to discomfort and lack of knowledge. These
-                  days almost every girl, even remote corners of country, use
-                  sanitary pads, thanks to government's tireless campaign, and
-                  by offering free pads to them. Due to this campaign using
-                  increased, but also brought the difficult of access in
-                  emergency and disposing those used pads safely without
-                  spoiling environment.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2">
+            <div class="col-lg-6 order-lg-1">
               <div class="p-5">
                 <img class="img-fluid rounded-circle" src="img/03.png" alt="" />
               </div>
             </div>
-            <div class="col-lg-6 order-lg-1">
+            <div class="col-lg-6 order-lg-2">
               <div class="p-5">
-                <h2 class="display-4">What we offer</h2>
-                <p>
-                  Complete range of products, for domestic as well industrial
-                  models, leading innovation and unique design, with advanced
-                  technology updated time to time. We design customer specific
-                  machines, to suit their needs, by which, our machines without
-                  doubt, preferred by best institutions across country. Indian
-                  government also recommending these machines in their SWACH
-                  BHARAT & BETI BACHAO BETI PADAO mission and grades been given
-                  to the schools, for installation and proper use of these
-                  machines.
-                </p>
+                <h2 class="display-5 pb-2 text-white">Incinerators</h2>
+                <div
+                  class="product-card mt-3"
+                  v-for="incinerator in incinerators"
+                >
+                  <div class="product-card-heading">{{ incinerator.name }}</div>
+                  <hr />
+                  <div class="product-card-detail">
+                    <div class="detail-item">
+                      <div>
+                        <span class="detail-item-value">{{
+                          incinerator.burning_capacity
+                        }}</span>
+                        <br />
+                        <span style="color:deeppink">
+                          <ion-icon name="ios-bonfire"></ion-icon> Burning
+                          capacity
+                        </span>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <div>
+                        <span class="detail-item-value">{{
+                          incinerator.dimension
+                        }}</span
+                        ><br />
+                        <span style="color:deeppink">
+                          <ion-icon name="ios-cube"></ion-icon> Dimension
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="product">
-        <div
-          style="padding: 100px 0px 200px 0px; background: #e9f4fb; cursor: pointer;"
-        >
-          <div class="container">
-            <h1 align="center" style="padding-bottom: 50px;">
-              Products We Manufacture
-            </h1>
-            <table class="table table-bordered ">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">Vending Machine</th>
-                  <th scope="col">Burning Machine <br />(Incinerators)</th>
-                  <th scope="col">Sanitary Napkins</th>
-                </tr>
-              </thead>
-              <tbody style="background: #fff;">
-                <tr>
-                  <td>
-                    <h5>SSR 30F (Free Vending)</h5>
-                    <div>Stacking capacity: 30 pads</div>
-                    <div>Dimension: 750x350x170</div>
-                    <br />
-                    <hr />
-                    <br />
-                    <h5>SSR 30</h5>
-                    <div>Stacking capacity: 30 pads</div>
-                    <div>Dimension: 750x350x170</div>
-                    <br />
-                    <hr />
-                    <br />
-                    <h5>SSR 60</h5>
-                    <div>Stacking capacity: 60 pads</div>
-                    <div>Dimension: 750x550x170</div>
-                    <br />
-                    <hr />
-                    <br />
-                    <h5>SSR 90</h5>
-                    <div>Stacking capacity: 90 pads</div>
-                    <div>Dimension: 750x750x170</div>
-                    <br />
-                    <br />
-                  </td>
-                  <td>
-                    <h5>DIS 10</h5>
-                    <div>Burning capacity: 5 pads</div>
-                    <div>Dimension: N/A</div>
-                    <br />
-                    <hr />
-                    <br />
-                    <h5>DIS 25</h5>
-                    <div>Burning capacity: 15 - 20 pads</div>
-                    <div>Dimension: 450x270x250</div>
-                    <br />
-                    <hr />
-                    <br />
-                    <h5>DIS 50</h5>
-                    <div>Burning capacity: 25 - 35 pads</div>
-                    <div>Dimension: 600x270x250</div>
-                    <br />
-                    <hr />
-                    <br />
-                    <h5>DIS 50E (Blower)</h5>
-                    <div>Burning capacity: 25 - 35 pads</div>
-                    <div>Dimension: 600x270x250</div>
-                    <br />
-                    <hr />
-                    <br />
-                    <h5>DIS 50XE (Blower & Filter)</h5>
-                    <div>Burning capacity: 25 - 35 pads</div>
-                    <div>Dimension: 600x270x250</div>
-                    <br />
-                    <br />
-                  </td>
-                  <td>
-                    <h5>Regular L - 240mm</h5>
-                    <div>Absorption capacity: 30 - 40 ml</div>
-                    <div>Dimension: 235x155x8</div>
-                    <br />
-                    <hr />
-                    <br />
-                    <h5>Regular XL - 280mm</h5>
-                    <div>Absorption capacity: 60 - 70 ml</div>
-                    <div>Dimension: 280x155x9</div>
-                    <br />
-                    <hr />
-                    <br />
-                    <h5>Ultrathin XL - 280mm</h5>
-                    <div>Absorption capacity: 60 - 70 ml</div>
-                    <div>Dimension: 285x155x6</div>
-                    <br />
-                    <br />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      <section style="background: #3742fa;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <div class="p-5">
+                <img class="img-fluid rounded-circle" src="img/02.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="p-5">
+                <h2 class="display-5 pb-2 text-white">Sanitary Napkins</h2>
+                <div
+                  class="product-card mt-3"
+                  v-for="sanitry_napkin in sanitry_napkins"
+                >
+                  <div class="product-card-heading">
+                    {{ sanitry_napkin.name }}
+                  </div>
+                  <hr />
+                  <div class="product-card-detail">
+                    <div class="detail-item">
+                      <div>
+                        <span class="detail-item-value">{{
+                          sanitry_napkin.absorbtion_capacity
+                        }}</span>
+                        <br />
+                        <span style="color:deeppink">
+                          <ion-icon name="ios-color-fill"></ion-icon> Absorption
+                          capacity
+                        </span>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <div>
+                        <span class="detail-item-value">{{
+                          sanitry_napkin.dimension
+                        }}</span
+                        ><br />
+                        <span style="color:deeppink">
+                          <ion-icon name="ios-cube"></ion-icon> Dimension
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section>
-        <div
-          style="padding: 100px 0px 200px 0px; background: #e9f4fb; cursor: pointer;"
-        >
-          <div class="container">
-            <h1 align="center" style="padding-bottom: 50px;">
-              Selection of M/c model based on no of users guidelines
-            </h1>
-
-            <table class="table table-bordered ">
-              <thead class="thead-dark">
-                <tr >
-                  <th rowspan="2">
-                    <p><strong>Sl No</strong></p>
-                  </th>
-                  <th rowspan="2">
-                    <p><strong>Place of installation</strong></p>
-                  </th>
-                  <th rowspan="2">
-                    <p><strong>No of users</strong></p>
-                  </th>
-                  <th rowspan="2">
-                    <p><strong>No of Washrooms per floor</strong></p>
-                    <p><strong>accessible</strong></p>
-                  </th>
-                  <th colspan="2">
-                    <p><strong>Recommended Vending M/c</strong></p>
-                  </th>
-                  <th colspan="3">
-                    <p><strong>Recommended Incinerator</strong></p>
-                  </th>
-                  </tr>
-                  <tr>
-                    <th>
-                      <p><strong>Model No</strong></p>
-                    </th>
-                    <th>
-                      <p><strong>Capacity</strong></p>
-                    </th>
-                    <th>
-                      <p><strong>Model No</strong></p>
-                    </th>
-                    <th>
-                      <p><strong>Capacity at a time</strong></p>
-                    </th>
-                    <th>
-                      <p><strong>Capacity 24 Hours</strong></p>
-                    </th>
-                  </tr>
-                </thead>
-                
-              </thead>
-              <tbody style="background: #fff;">
-                <tr>
-                  <td rowspan="2">
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Residential</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;10</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DIS-15</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>2-3</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>50</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><strong>Residential</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;50</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DSR-60</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>60 Pads</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DIS-50</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>10-15</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>250-300</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="9">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><strong>2</strong></p>
-                  </td>
-                  <td>
-                    <p>
-                      <strong
-                        >Offices / Malls / Restaurants/Public spaces</strong
-                      >
-                    </p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;50</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DSR-60</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>60 Pads</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DIS-50</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>10-15</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>250-300</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="9">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td rowspan="3">
-                    <p><strong>3</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Industries</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;100</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>SSR-30</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>30 Pads</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DIS-50</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>10-15</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>250-300</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><strong>Industries</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;250</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DSR-60</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>60 Pads</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DIS-100</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>25-30</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>400-500</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><strong>Industries</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;500</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Customized</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Customized</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="9">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td rowspan="3">
-                    <p><strong>4</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Schools</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;100</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>SSR-30</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>30 Pads</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DIS-50</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>10-15</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>250-300</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><strong>Schools</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;250</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DSR-60</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>60 Pads</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DIS-100</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>25-30</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>400-500</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><strong>Schools</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;500</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Customized</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Customized</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="9">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td rowspan="2">
-                    <p><strong>5</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Colleges</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;250</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DSR-60</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>60 Pads</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>DIS-100</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>25-30</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>400-500</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><strong>Colleges</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>&gt;500</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>1</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Customized</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Customized</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>----</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="9">&nbsp;</td>
-                </tr>
-              </tbody>
-            </table>
+        <div style="padding: 100px 0px 100px 0px; background: #e9f4fb;">
+          <div class="container" align="center">
+            <div class="model-selection-card">
+              <div align="center" class="model-selection-card-title">
+                <ion-icon name="book" size="large"></ion-icon> &nbsp; Guidelines
+                to select machine model
+              </div>
+              <a href="product_selection.html">
+                <div class="model-selection-card-button">
+                  Know More &nbsp;
+                  <ion-icon name="arrow-forward" size="large"></ion-icon>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="faq">
-        <div
-          style="padding: 100px 0px 200px 0px; background: #f5f6fa; cursor: pointer;"
-        >
+        <div style="padding: 100px 0px 200px 0px; background: #fff;">
           <div class="container">
             <h1 align="center" style="padding-bottom: 50px;">FAQ</h1>
             <div class="accordion" id="accordionExample">
               <div class="card" v-for="(faq, index) in faqs">
                 <div
-                  class="card-header"
+                  class="card-header py-4 faq_question"
                   :id="'heading'+index"
                   data-toggle="collapse"
                   :data-target="'#collapse'+index"
                   aria-expanded="false"
                   :aria-controls="'collapse'+index"
+                  style="cursor: pointer;"
                 >
                   <h5 class="mb-0">
                     {{ faq.title }}
@@ -664,8 +363,18 @@
                   :aria-labelledby="'heading'+index"
                   data-parent="#accordionExample"
                 >
-                  <div class="card-body">
+                  <div class="card-body faq_answer">
                     {{ faq.body }}
+                    <ul>
+                      <li v-for="point in faq.points">
+                        {{ point.point }}
+                        <ul>
+                          <li v-for="sub_point in point.sub_points">
+                            {{ sub_point }}
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -674,46 +383,114 @@
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer
-        id="contact"
-        class="text-muted"
-        style="padding-top: 50px; padding-bottom: 50px;"
-      >
+      <section>
+        <div class="container py-5">
+          <h1 align="center" style="padding-bottom: 50px;">Our Customers</h1>
+          <div class="customers">
+            <img
+              src="img/colleges/ihmct.jpg"
+              class="customer-image mx-3"
+              alt="IHMCT"
+            />
+            <img
+              src="img/colleges/iiser.png"
+              class="customer-image mx-3"
+              alt="IISER"
+            />
+            <img
+              src="img/colleges/lions_english_school.jpg"
+              class="customer-image mx-3"
+              alt="Lions English School"
+            />
+            <img
+              src="img/colleges/navodaya_vidalay.jpg"
+              class="customer-image mx-3"
+              alt="Navodaya Vidyalaya"
+            />
+            <img
+              src="img/colleges/nift_mumbai.jpg"
+              class="customer-image mx-3"
+              alt="Nift"
+            />
+            <img
+              src="img/colleges/nkm_college_of_nursing.jpg"
+              class="customer-image mx-3"
+              alt="NKM College Of Nursing"
+            />
+            <img
+              src="img/colleges/st_xavier_school.jpg"
+              class="customer-image mx-3"
+              alt="St. Xavier School"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
         <div class="container">
-          <h4>
-            For retail customer enquiry:
-            <a href="https://forms.gle/44cBt4bnBbAov7JW8" target="_blank"
-              >Click here</a
-            >
-          </h4>
-          <h4>
-            For distribustor enquiry:
-            <a href="https://forms.gle/1TcmUgJy6gGZdzcu8" target="_blank"
-              >Click here</a
-            >
-          </h4>
-          <br />
-          <hr />
-          <br />
-          <h5>Address</h5>
-          <p>
-            Arihant Creations <br />
-            # 4, Shilpam Complex, <br />
-            Gayathri Mandir Road, Amli, Silvassa, <br />
-            UT of Dadra & Nagar Haveli (396230)<br />
-          </p>
-          <br />
-          <h5>Contact</h5>
-          <p>
-            Arihant Creations <br />
-            Contact : +91 9825947492 , 9909424296 <br />
-            Email : sales@arihantcreations.com
-          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <a
+                href="https://forms.gle/44cBt4bnBbAov7JW8"
+                target="_blank"
+                style="text-decoration: none;"
+              >
+                <div class="enquiry-card p-5 my-2">
+                  <ion-icon name="ios-chatboxes" size="large"></ion-icon>
+                  <span class="px-4 enquiry-card-content"
+                    >Retail customer enquiry</span
+                  >
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a
+                href="https://forms.gle/1TcmUgJy6gGZdzcu8"
+                target="_blank"
+                style="text-decoration: none;"
+              >
+                <div class="enquiry-card p-5 my-2">
+                  <ion-icon name="ios-chatbubbles" size="large"></ion-icon>
+                  <span class="px-4 enquiry-card-content"
+                    >Distribustor enquiry</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div style="min-height: 5px; background: #3c40c6;"></div>
+      <footer id="contact" class="py-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="my-2">
+                <h3><ion-icon name="ios-pin"></ion-icon> Address</h3>
+                <p>
+                  Arihant Creations <br />
+                  # 4, Shilpam Complex, <br />
+                  Gayathri Mandir Road, Amli, Silvassa, <br />
+                  UT of Dadra & Nagar Haveli (396230)<br />
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="my-2">
+                <h3><ion-icon name="ios-call"></ion-icon> Contact</h3>
+                <p>
+                  Arihant Creations <br />
+                  +91 9825947492 , 9909424296 <br />
+                  sales@arihantcreations.com
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
   </body>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
@@ -721,43 +498,239 @@
     var app = new Vue({
       el: "#app",
       data: {
+        vending_machines: [
+          {
+            name: "SSR 30F (Free Vending)",
+            stacking_capacity: "30 pads",
+            dimension: "750x350x170"
+          },
+          {
+            name: "SSR 30",
+            stacking_capacity: "30 pads",
+            dimension: "750x350x170"
+          },
+          {
+            name: "SSR 60",
+            stacking_capacity: "60 pads",
+            dimension: "750x550x170"
+          },
+          {
+            name: "SSR 90",
+            stacking_capacity: "90 pads",
+            dimension: "750x750x170"
+          }
+        ],
+        sanitry_napkins: [
+          {
+            name: "Regular L - 240mm",
+            absorbtion_capacity: "30 - 40 ml",
+            dimension: "235x155x8"
+          },
+          {
+            name: "Regular XL - 280mm",
+            absorbtion_capacity: "60 - 70 ml",
+            dimension: "280x155x9"
+          },
+          {
+            name: "Ultrathin XL - 280mm",
+            absorbtion_capacity: "60 - 70 ml",
+            dimension: "285x155x6"
+          }
+        ],
+        incinerators: [
+          {
+            name: "DIS 10",
+            burning_capacity: "5 pads",
+            dimension: "N/A"
+          },
+          {
+            name: "DIS 25",
+            burning_capacity: "15 - 20 pads",
+            dimension: "450x270x250"
+          },
+          {
+            name: "DIS 50",
+            burning_capacity: "25 - 35 pads",
+            dimension: "600x270x250"
+          },
+          {
+            name: "DIS 50E (Blower)",
+            burning_capacity: "25 - 35 pads",
+            dimension: "600x270x250"
+          },
+          {
+            name: "DIS 50XE (Blower & Filter)",
+            burning_capacity: "25 - 35 pads",
+            dimension: "600x270x250"
+          }
+        ],
         faqs: [
           {
             title: "What is the need of Sanitary napkin vending machines?",
             body:
-              "Those days can start at any moment and it will be embarrassing moment for girls and women, who were not prepared with pad availability.In few schools or colleges some stock is maintained but it is becoming difficult to maintain the stock or give at the time they need for various reasons. They need support at that time and vending machines give such support and comfort, when available in front of them.They just insert a designated coin and take a pad to be comfort.Be it a college, school or any public places, this vending machines give women, the comfort they need at the time."
+              "Those days can start at any moment and it will be embarrassing moment for girls and women, who were not prepared with pad availability.In few schools or colleges some stock is maintained but it is becoming difficult to maintain the stock or give at the time they need for various reasons. They need support at that time and vending machines give such support and comfort, when available in front of them.They just insert a designated coin and take a pad to be comfort.Be it a college, school or any public places, this vending machines give women, the comfort they need at the time.",
+            points: []
           },
           {
             title: "What is the need for Incinerators?",
             body:
-              "Getting pads at the time of need is one issue and disposing the used pads a nuisance to many users and non users.Used pads thrown in washrooms or dustbins without any option.These pads blocks the plumbing works in wash rooms.Handling dustbins also a menace.Pads don’t decompose for many years.The best solution is burn it and incinerators is the best alternative."
+              "Getting pads at the time of need is one issue and disposing the used pads a nuisance to many users and non users.Used pads thrown in washrooms or dustbins without any option.These pads blocks the plumbing works in wash rooms.Handling dustbins also a menace.Pads don’t decompose for many years.The best solution is burn it and incinerators is the best alternative.",
+            points: []
           },
           {
             title: "Is these needed in our country really?",
             body:
-              "Definitely, growing population, increasing users and used pads is the biggest challenge to us. Unless we destroy it after usage, will become a menace to our cleanliness campaign."
+              "Definitely, growing population, increasing users and used pads is the biggest challenge to us. Unless we destroy it after usage, will become a menace to our cleanliness campaign.",
+            points: []
           },
           {
             title: "How to select a good vending machine from market?",
-            body:
-              "Stacking capacity, Electronic coin vending mechanism, Coin should be rejected if there is no stock, Free delivery of pads, 2-3 years warranty for manufacturing defects, Service backup for atleast five years on chargeable basis, High low voltage protection, Battery if frequent power cuts happens, Auto selection of different rows"
+            body: "",
+            points: [
+              {
+                point: "Stacking capacity",
+                sub_points: []
+              },
+              {
+                point: "Electronic coin vending mechanism",
+                sub_points: []
+              },
+              {
+                point: "Coin should be rejected if there is no stock",
+                sub_points: []
+              },
+              {
+                point: "Free delivery of pads",
+                sub_points: []
+              },
+              {
+                point: "2-3 years warranty for manufacturing defects",
+                sub_points: []
+              },
+              {
+                point:
+                  "Service backup for atleast five years on chargeable basis",
+                sub_points: []
+              },
+              {
+                point: "High low voltage protection",
+                sub_points: []
+              },
+              {
+                point: "Battery if frequent power cuts happens",
+                sub_points: []
+              },
+              {
+                point: "Auto selection of different rows",
+                sub_points: []
+              }
+            ]
           },
           {
             title: "How to select a good Incinerator from market?",
-            body:
-              "Number of pads can be burnt at a time is the most important issue, Noumber of pads can be burnt in 24 hours, Auto on / off mode without need of switching on by every user, Temperature display, Machine should switch on automatically without manual pressing of switch, Ash collection tray should not allow to place used pads even by mistake, 2-3 years warranty for manufacturing defects, Service backup for atleast five years on chargeable basis, Spares available easily"
+            body: "",
+            points: [
+              {
+                point:
+                  "Number of pads can be burnt at a time is the most important issue",
+                sub_points: []
+              },
+              {
+                point: "Number of pads can be burnt in 24 hours",
+                sub_points: []
+              },
+              {
+                point:
+                  "Auto on / off mode without need of switching on by every use",
+                sub_points: []
+              },
+              {
+                point: "Temperature display",
+                sub_points: []
+              },
+              {
+                point:
+                  "Machine should switch on automatically without manual pressing of switch",
+                sub_points: []
+              },
+              {
+                point:
+                  "Ash collection tray should not allow to place used pads even by mistake",
+                sub_points: []
+              },
+              {
+                point: "2-3 years warranty for manufacturing defects",
+                sub_points: []
+              },
+              {
+                point:
+                  "Service backup for atleast five years on chargeable basis",
+                sub_points: []
+              },
+              {
+                point: "Spares available easily",
+                sub_points: []
+              }
+            ]
           },
           {
             title: "Do one need to know about Sanitary napkins too?",
-            body: "Definitely.  Various length, thickness and purpose pads were available in the market.  Machines designed accordingly.  Confirm what kind of pads accepted by the vending machine.  Also by stacking good pads the machine will be used ever.  If low priced pads kept girls or women will not use the machine."
+            body:
+              "Definitely.  Various length, thickness and purpose pads were available in the market.  Machines designed accordingly.  Confirm what kind of pads accepted by the vending machine.  Also by stacking good pads the machine will be used ever.  If low priced pads kept girls or women will not use the machine.",
+            points: []
           },
           {
             title: "How to select good sanitary napkin from market?",
-            body: "Sanitary napkins available in various types.  One should choose right napkin based on age, body, skin sensitivity, fluid flow during those times and few other factors.  There is no any hard and fast rules for this.  One need to use the pads and decide it is better suiting her or not.  Long term use of wrong sanitary pads expected to give complications later.  Women and girls should learn the different type of pads available in the market and discuss with family members or gynecologist to choose right one for them.  Please refer our Sanitay napkins table for full understanding."
+            body:
+              "Sanitary napkins available in various types.  One should choose right napkin based on age, body, skin sensitivity, fluid flow during those times and few other factors.  There is no any hard and fast rules for this.  One need to use the pads and decide it is better suiting her or not.  Long term use of wrong sanitary pads expected to give complications later.  Women and girls should learn the different type of pads available in the market and discuss with family members or gynecologist to choose right one for them.  Please refer our Sanitay napkins table for full understanding.",
+            points: []
           },
           {
             title: "What else should one know while selecting machines?",
-            body: "One need to understand any machines are about to give trouble.  All the time it cannot be a manufacturing defect only.  It is advisable to train your own electrician for simple problems, also make one incharge, who monitor the machine and give feed back to manufacturer.   Also look for any service or distributor available near you for that brand you buy.  Don’t fully depend on manufacturer as his charges to visit is always will be on the higher side."
+            body:
+              "One need to understand any machines are about to give trouble.  All the time it cannot be a manufacturing defect only.  It is advisable to train your own electrician for simple problems, also make one incharge, who monitor the machine and give feed back to manufacturer.   Also look for any service or distributor available near you for that brand you buy.  Don’t fully depend on manufacturer as his charges to visit is always will be on the higher side.",
+            points: []
+          },
+          {
+            title: "What problems will user face after installation?",
+            body: "",
+            points: [
+              {
+                point: "Vending Machines",
+                sub_points: [
+                  "Free or smooth delivery of pads",
+                  "Coin inserted but pads not delivered",
+                  "Pads get stuck in delivery springs quality",
+                  "Different brands will not be used",
+                  "Different size and thickness of pads can’t be used",
+                  "Frequent breakouts due to PCB circuit board quality"
+                ]
+              },
+              {
+                point: "Incinerators",
+                sub_points: [
+                  "Most users in schools and colleges use during break period more",
+                  "More pads at a time will lead to improper burning of pads",
+                  "Frequent breakdown due to PCB circuit boards",
+                  "User forgets to switch on the machine frequently",
+                  "Wrong selection of machine model based on cost",
+                  "Wrong decision to install machine anywhere",
+                  "Heater quality issue",
+                  "Smoke exhaust methods did not considered"
+                ]
+              },
+              {
+                point: "Other issues",
+                sub_points: [
+                  "Service expenses is not at all free even under warranty period",
+                  "If you don’t pay you can’t get services, please remember",
+                  "Buy machines, as it is important for girls who were in trouble at time",
+                  "It helps to get pads in time and also dispose after use",
+                  "It is not possible to collect used pads and dispose later",
+                  "This helps avoid blocking wash room plumbing works and also landfill"
+                ]
+              }
+            ]
           }
         ]
       }

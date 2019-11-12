@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: "Lato";
+  font-family: "Rubik", sans-serif;
 }
 
 h1,
@@ -16,6 +16,11 @@ h5,
 h6 {
   font-family: "Nunito";
   font-weight: 800 !important;
+}
+
+.logo {
+  width: 400px;
+  height: auto;
 }
 
 .btn-xl {
@@ -34,10 +39,127 @@ h6 {
   border-radius: 5rem;
 }
 
+.product-card {
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 16pt;
+}
+
+.product-card-detail {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+}
+
+.detail-item {
+  flex-grow: 1;
+}
+
+.detail-item-value {
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+.faq_question {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.faq_answer {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+.enquiry-card {
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.enquiry-card:hover {
+  box-shadow: 0px 0px 0px 2px inset #d2dae2;
+}
+
+.enquiry-card-content {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+.footer {
+  background: #1e272e;
+  color: #fff;
+}
+
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.customer-image {
+  width: 100px;
+  height: auto;
+}
+
+.title-alternative {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+.model-selection-card {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.model-selection-card-title {
+  flex-grow: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+.model-selection-card-button {
+  height: 100%;
+  background: #3742fa;
+  padding: 40px;
+  font-size: 14pt;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #000;
+  background-color: #fff;
+  box-shadow: 0px 4px 30px 2px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #dddddd;
 }
 
 .navbar-custom .navbar-brand {
@@ -52,6 +174,7 @@ h6 {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  margin-left: 30px;
 }
 
 header.masthead {
@@ -59,25 +182,35 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.15) 60%, #f5f6fa 98%), url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
+  margin-top: 100px;
 }
 
 header.masthead .masthead-content .masthead-heading {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.288);
 }
 
 header.masthead .masthead-content .masthead-subheading {
-  font-size: 2rem;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: "Rubik", sans-serif;
+  margin-top: -10px;
 }
 
 @media (min-width: 992px) {
@@ -86,10 +219,10 @@ header.masthead .masthead-content .masthead-subheading {
     padding-bottom: 10rem;
   }
   header.masthead .masthead-content .masthead-heading {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   header.masthead .masthead-content .masthead-subheading {
-    font-size: 4rem;
+    font-size: 1.2rem;
   }
 }
 

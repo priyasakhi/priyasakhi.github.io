@@ -11,6 +11,11 @@ h6 {
   @include heading-font;
 }
 
+.logo {
+  width: 400px;
+  height: auto;
+}
+
 .btn-xl {
   text-transform: uppercase;
   padding: 1.5rem 3rem;
@@ -25,4 +30,118 @@ h6 {
 
 .rounded-pill {
   border-radius: 5rem;
+}
+
+.product-card {
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 15px 0px rgba($color: #000000, $alpha: 0.1);
+}
+
+.product-card-heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 16pt;
+}
+
+.product-card-detail {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+}
+
+.detail-item {
+  flex-grow: 1;
+}
+
+.detail-item-value {
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+.faq_question {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.faq_answer {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+.enquiry-card {
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 15px 0px rgba($color: #000000, $alpha: 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.enquiry-card:hover {
+  box-shadow: 0px 0px 0px 2px inset #d2dae2;
+}
+
+.enquiry-card-content {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+.footer {
+  background: #1e272e;
+  color: #fff;
+}
+
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.customer-image {
+  width: 100px;
+  height: auto;
+}
+
+.title-alternative {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+.model-selection-card {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px 0px rgba($color: #000000, $alpha: 0.1);
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.model-selection-card-title {
+  flex-grow: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+.model-selection-card-button {
+  height: 100%;
+  background: #3742fa;
+  padding: 40px;
+  font-size: 14pt;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
