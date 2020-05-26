@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Arihant Creations v5.0.7 ()
- * Copyright 2013-2019 
+ * Copyright 2013-2020 
  * Licensed under  (https://github.com/BlackrockDigital/aihant-creations/blob/master/LICENSE)
  */
 
@@ -152,6 +152,14 @@ h6 {
   flex-grow: 1;
   display: flex;
   align-items: center;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.nav-item {
+  cursor: pointer;
 }
 
 .navbar-custom {
